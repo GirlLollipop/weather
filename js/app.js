@@ -10,8 +10,26 @@ function handleResponse(data) {
     weekClime(arrayDays);
 }
 
+/*geolocalización
+$.ajax ({
+    url: `https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDKth8Ka7mbqoelHGaXopExD8ejWQRhVpY`
+})
+
+function showError() {
+    alert("Location can't be found");
+}
+
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition( );
+}
+else {
+    alert("El navegador no soporta Geolocalización.");
+}
+*/
+
+
 $.ajax({
-    url: `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/ff278826892135a44890261f4d5298ee/37.8267,-122.4233`
+    url: `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/ff278826892135a44890261f4d5298ee/19.424363,-99.163015`
 }).done(handleResponse);
 
 function paintData(wind, humidity, uvIndex, pressure) {
@@ -41,17 +59,16 @@ function weekClime(arrayDays) {
 function templateDay(params) {
     /*se hace un template y se hace una interpolación para llamar a la función days y asignarle el parámetro 
     time, así calcula el día, después se ponen los datos de temp max y min*/
-    let template = `<div id="day-weather" class="card col s12 m8 l4">
+    let template = ` <div id="day-weather" class="col s12 m8 l4">
         <p> ${days(params.time)}<span>${params.apparentTemperatureMin}° ${params.apparentTemperatureMax}°</span></p>
     </div>`
-    
-
-    console.log(params.apparentTemperatureMin);
-    
+    /*console.log(params.apparentTemperatureMin);*/    
     return template;
 }
 
+/* función convierte el time en el día que es*/
 function days(unixNumber) {
     return new Date(unixNumber * 1000).toLocaleString('es-MX', { weekday: 'long' });
 } 
+
 

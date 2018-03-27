@@ -15,22 +15,24 @@
 <body>
   <header>
     <nav>
-      <div class="nav-wrapper teal lighten-2">
-        <a href="#!" class="brand-logo center">The weather</a>
+      <div class="nav-wrapper col s12 m6 teal lighten-2">
+        <a href="#!" class="brand-logo center">Weather</a>
       </div>
     </nav>
   </header>
   <section class="row">
     <div class="col s12 m6">
     <div id="container-day" class=""></div>
-    <a class="waves-effect waves-light btn center">
-      <i class="material-icons left">cloud</i>PREDICCIÓN DE LA SEMANA</a>
+    <div>
+      <a id="btn-week" class=" waves-effect waves-light btn center">
+        <i class="material-icons left">cloud</i>PREDICCIÓN DE LA SEMANA</a>
+    </div>    
     </div>    
   </section>
   <section class="row">
     <div class="col s12 m6">
-      <div id="container-week" class=""></div>
-      <a class="waves-effect waves-light btn center">
+      <div id="container-week" class="card hidden"></div>
+      <a  class="waves-effect waves-light btn center">
         <i class="material-icons left">cloud</i>REGRESA</a>
     </div>
   </section>
