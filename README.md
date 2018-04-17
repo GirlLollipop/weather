@@ -2,7 +2,7 @@
 
 Web App meteorológica para el pronóstico del clima del día y de la semana.
 
-##Desarrollado para [Laboratoria] (http://www.laboratoria.la/)
+##Desarrollado para [Laboratoria](http://www.laboratoria.la/)
 
 TECNOLOGÍA UTILIZADA
 *JS
