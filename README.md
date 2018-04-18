@@ -1,4 +1,4 @@
-# Weather
+# Weather V 1.0 
 
 
 ## Desarrollado para 
@@ -6,9 +6,9 @@
 
 ![](images/img_readme.jpg)
 
-Web App meteorológica para el pronóstico del clima del día y de la semana.
+Por medio del consumos de la API de de Dark Sky se realizo una Web App meteorológica en al cual se puede consultar el clima del día y de los próximos 7 días.
 
-##Desarrollado para [Laboratoria](http://www.laboratoria.la/)
+
 
 TECNOLOGÍA UTILIZADA
 *JS
