@@ -34,11 +34,11 @@ $.ajax({
 
 function paintData(wind, humidity, uvIndex, pressure) {
    /*se crean los elementos del html y se guradan dentro de un let*/
-    let template = `<div id="day-weather" class="card col s12 m8 l4">
-        <p>Wind:<span>${wind}</span></p>
-        <p>Humidity: <span>${humidity}</span></p>
-        <span>UV Index: <span>${uvIndex}</span></p>
-        <p>Pressure:<span>${pressure}</span></p>
+    let template = `<div id="day-weather" class="card col s12 m12 l12 center teal lighten-2">
+        <p>Wind: <span>${wind}</span> </p>
+        <p>Humidity: <span>${humidity}</span> </p>
+        <span>UV Index: <span>${uvIndex}</span> </p>
+        <p>Pressure: <span>${pressure}</span> </p>
     </div>`
      /*se llama al elemento que contendrá el template por medio de su ID y se le asignan los elementos
     del template*/   
@@ -59,7 +59,7 @@ function weekClime(arrayDays) {
 function templateDay(params) {
     /*se hace un template y se hace una interpolación para llamar a la función days y asignarle el parámetro 
     time, así calcula el día, después se ponen los datos de temp max y min*/
-    let template = ` <div id="day-weather" class="col s12 m8 l4">
+    let template = ` <div id="day-weather" class="col s12 m12 l12 teal lighten-2">
         <p> ${days(params.time)}<span>${params.apparentTemperatureMin}° ${params.apparentTemperatureMax}°</span></p>
     </div>`
     /*console.log(params.apparentTemperatureMin);*/    

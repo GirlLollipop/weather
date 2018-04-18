@@ -12,34 +12,41 @@
   <title></title>
 </head>
 
-<body>
+<body id="cover">
   <header>
     <nav>
-      <div class="nav-wrapper col s12 m6 teal lighten-2">
-        <a href="#!" class="brand-logo center">Weather</a>
+      <div class="nav-wrapper col s12 m6 ">
+        <a href="#!" class="brand-logo center">WEATHER</a>
       </div>
     </nav>
   </header>
-  <section class="row">
-    <div class="col s12 m6">
+  <section class="container" >
+  <div>
+    <div class="row " >
+      <div class="col s12 m12 center"></div>
+    <h5 class="font_title center">Clima del día</h5>
+  </div>
+  </div>
+  <section class="row ">
+    <div id="days" class="col s12 m12 l12 center teal lighten-2 filter">
     <div id="container-day" class=""></div>
-    <div>
-      <a id="btn-week" class=" waves-effect waves-light btn center">
-        <i class="material-icons left">cloud</i>PREDICCIÓN DE LA SEMANA</a>
-    </div>    
-    </div>    
+    </div>        
+  </section>  
   </section>
   <section class="row">
-    <div class="col s12 m6">
-      <div id="container-week" class="card hidden"></div>
-      <a  class="waves-effect waves-light btn center">
-        <i class="material-icons left">cloud</i>REGRESA</a>
+    <div class="row" >
+      <div class="col s12 l12 center" >
+        <h5 class="font_title">Predicción de la semana</h5>
+      </div>
+    </div>
+    <div class="container" >
+      <div class="row">
+    <div id="week" class="col s12 m6 l12 center card teal lighten-2 filter">
+      <div id="container-week" class=""></div>
+    </div>
+    </div>
     </div>
   </section>
-
-  
-
-
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script type="text/javascript" src="./js/app.js">
