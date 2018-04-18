@@ -1,4 +1,10 @@
-#WEATHER V2.0
+# Weather
+
+
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
+
+![](images/img_readme.jpg)
 
 Web App meteorológica para el pronóstico del clima del día y de la semana.
 
