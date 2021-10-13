@@ -10,6 +10,7 @@ function handleResponse(data) {
     weekClime(arrayDays);
 }
 
+
 /*geolocalización
 $.ajax ({
     url: `https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDKth8Ka7mbqoelHGaXopExD8ejWQRhVpY`
@@ -29,11 +30,11 @@ else {
 
 
 $.ajax({
-    url: `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/ff278826892135a44890261f4d5298ee/19.424363,-99.163015`
+    url: `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c656ef5324b0a79cd3f63d6afd07aa9c/37.8267,-122.4233`
 }).done(handleResponse);
 
 function paintData(wind, humidity, uvIndex, pressure) {
-   /*se crean los elementos del html y se guradan dentro de un let*/
+   /*se crean los elementos del html y se guardan dentro de un let*/
     let template = `<div id="day-weather" class="card col s12 m12 l12 center teal lighten-2">
         <p>Wind: <span>${wind}</span> </p>
         <p>Humidity: <span>${humidity}</span> </p>
